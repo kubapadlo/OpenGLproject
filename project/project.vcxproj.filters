@@ -5,57 +5,73 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Pliki nagłówkowe">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Pliki zasobów">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Shaders">
+      <UniqueIdentifier>{a95bf5a0-9122-4424-a9e0-d151ff516d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki źródłowe\src">
+      <UniqueIdentifier>{1a5b1a16-947c-420b-9908-b2b3cc422a5c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\openGLibs\glad\src\glad.c">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="VBO.cpp">
+      <Filter>Pliki źródłowe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VAO.cpp">
+      <Filter>Pliki źródłowe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="shaderClass.cpp">
+      <Filter>Pliki źródłowe\src</Filter>
+    </ClCompile>
     <ClCompile Include="EBO.cpp">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Pliki źródłowe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Pliki źródłowe\src</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="shaderClass.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="VAO.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="VBO.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Pliki źródłowe\Headers</Filter>
+    </ClInclude>
     <ClInclude Include="EBO.h">
-      <Filter>Pliki źródłowe</Filter>
-    </ClInclude>
-    <ClInclude Include="shaderClass.h">
-      <Filter>Pliki źródłowe</Filter>
-    </ClInclude>
-    <ClInclude Include="VAO.h">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Pliki źródłowe\Headers</Filter>
     </ClInclude>
     <ClInclude Include="VBO.h">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Pliki źródłowe\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
-      <Filter>Pliki źródłowe</Filter>
+    <ClInclude Include="VAO.h">
+      <Filter>Pliki źródłowe\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="shaderClass.h">
+      <Filter>Pliki źródłowe\Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="default.frag" />
-    <None Include="default.vert" />
+    <None Include="default.frag">
+      <Filter>Pliki źródłowe\Shaders</Filter>
+    </None>
+    <None Include="default.vert">
+      <Filter>Pliki źródłowe\Shaders</Filter>
+    </None>
+    <None Include="light.vert">
+      <Filter>Pliki źródłowe\Shaders</Filter>
+    </None>
+    <None Include="light.frag">
+      <Filter>Pliki źródłowe\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
